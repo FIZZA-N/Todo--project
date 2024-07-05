@@ -1,4 +1,8 @@
+import inquirer from "inquirer";
+async function main() {
+    let todos = [];
     let condition = true;
+    while (condition) {
         let addtask = await inquirer.prompt([
             {
                 name: 'todo',
